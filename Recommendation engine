@@ -1,4 +1,10 @@
 #To check implicit or explicit features, we can use:
 df[['feature1','feature2','feature3']].nunique()
-#The one with lesser number of values is implicit. For example a binary feature is just a flag
+
+#Tip: The one with lesser number of values is implicit. For example a binary feature is just a flag
+
+#Non-personalized recommendations- Common recommendations to everyone
+#For example for a movie recommendation- we can use value_counts and index to get the most rented/watched movie
+
+df['movie_name'].value_counts().index
 
